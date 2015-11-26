@@ -1,0 +1,10 @@
+{
+  "name": "cordova-social",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "multer": "^1.1.0",
+    "shortid": "^2.2.4"
+  }
+}

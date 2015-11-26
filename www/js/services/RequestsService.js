@@ -40,7 +40,7 @@
 
 			$ionicLoading.show();
 
-			$http.post(base_url + '/test', {'data' : data})
+			$http.post(base_url + '/data', {'data' : data})
 				.success(function(response){
 
 					$timeout.cancel(timer);
