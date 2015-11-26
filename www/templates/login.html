@@ -1,0 +1,15 @@
+<ion-view title="Login & Logout" ng-controller="LoginController as login_ctrl" ng-init="login_ctrl.updateLoginStatus()">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header padding">
+
+	<button class="button button-positive button-block" ng-hide="login_ctrl.logged_in" ng-click="fbLogin()">
+	Login with Facebook
+	</button>
+
+	<button class="button button-assertive button-block" ng-show="login_ctrl.logged_in" ng-click="fbLogout()">
+	Logout
+	</button>
+  </ion-content>
+</ion-view>

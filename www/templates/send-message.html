@@ -1,0 +1,18 @@
+<ion-view title="Send Message" ng-controller="DialogController as dialog_ctrl">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header padding">
+
+	<div class="list">
+	  <label class="item item-input">
+	    <input type="url" ng-model="dialog_ctrl.url" placeholder="URL">
+	  </label>
+	</div>
+
+	<button class="button button-balanced button-block" ng-click="sendMessage()">
+	  Send Message
+	</button>
+
+  </ion-content>
+</ion-view>

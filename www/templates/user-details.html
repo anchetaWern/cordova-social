@@ -1,0 +1,24 @@
+<ion-view title="User Details" ng-controller="UserDetailsController as details_ctrl">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header padding">
+
+	<button class="button button-positive" ng-hide="user" ng-click="details_ctrl.getUserInfo()">
+	  Show User Details
+	</button>
+
+	<div class="card">
+	  <div class="item item-text-wrap" ng-if="user">
+	    <ul>
+	    	<li>id: {{ user.id }}</li>
+	    	<li>email: {{ user.email }}</li>
+	    	<li>name: {{ user.first_name }} {{ user.last_name }}</li>
+	    	<li>gender: {{ user.gender }}</li>
+	    	<li>age_range: {{ user.age_range.min }}</li>
+	    </ul>
+	  </div>
+	</div>
+
+  </ion-content>
+</ion-view>

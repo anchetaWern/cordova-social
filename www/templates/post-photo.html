@@ -1,0 +1,29 @@
+<ion-view title="Post Photo" ng-controller="DialogController as dialog_ctrl">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header padding">
+
+	<button class="button button-balanced button-block" ng-click="capturePhoto()">
+	  Capture Photo
+	</button>
+	
+	<div id="photo-container" ng-if="dialog_ctrl.photo">	
+
+		<div class="card">
+			<img ng-src="{{ dialog_ctrl.photo }}">
+		</div>
+
+		<div class="list">
+			<label class="item item-input">
+				<input type="text" ng-model="dialog_ctrl.caption" placeholder="Caption">
+			</label>
+		</div>
+
+		<button class="button button-balanced button-block" ng-click="postPhoto()">
+		  Post Photo
+		</button>
+	</div>
+
+  </ion-content>
+</ion-view>
