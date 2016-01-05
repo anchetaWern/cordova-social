@@ -1,6 +1,6 @@
 #Cordova Social
 
-The sample app for the Sitepoint tutorial on working with the Facebook API on Cordova.
+The sample app for the Sitepoint tutorial on [Working with the Facebook API in a Cordova App](http://www.sitepoint.com/working-with-the-facebook-api-in-a-cordova-app).
 
 ##License
 
